@@ -1,0 +1,181 @@
+body{
+    font-family: robotoserif;
+    margin: 0px 80px 0px 80px;
+    height: auto;
+    background-color: #f5f3ef;
+}
+
+.grid-container{
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ grid-template-areas: 
+ "header header"
+ "title image"
+ "cards cards"
+ "footer footer";
+}
+
+.grid-item{
+ text-align: center;
+}
+
+.header{
+    grid-area: header;
+    height: 100px;
+    padding: 30px 0px;
+   
+}
+
+.header-card{
+    display: flex;
+    justify-content: space-between;  
+}
+
+.header-card > :nth-child(2){
+    display: flex;
+    position: relative;
+    right: 20px;
+}
+
+.header-card > :nth-child(3){
+    background-color: #000000;
+    color: #FFFFFF;
+    border-radius: 28px;
+    border: #000000 solid;
+    height: 48px;
+    width: 130px;
+
+}
+
+a{
+    text-decoration: none;
+    color: #000000;
+}
+
+nav{
+    font-size: 18px;
+}
+
+nav > :nth-child(2){
+    margin-left: 47px;
+}
+
+.title{
+    grid-area: title;
+    height: 550px;
+}
+
+.title-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+
+.title-card > :nth-child(1){
+font-size: 64px;
+flex-wrap: wrap;
+}
+
+.title-card > :nth-child(2){
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 400px;
+    color: #646464;
+}
+
+.image{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    grid-area: image;
+    height: 550px;
+}
+
+.image-spec > :nth-child(1){
+    width: 600px;
+    height: 440px;
+    border-radius: 40px;
+}
+
+.cards{
+    grid-area: cards;
+    height: 900px;
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cards > :nth-child(1){
+    background-color: #FEBD2F;
+}
+
+.card1{
+    display: flex;
+    text-align: left;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 47px;
+    margin-left: 30px; 
+}
+
+.card-container{
+height: 324px;
+width: 400px;
+background-color: #FFFFFF;
+border-radius: 40px;
+}
+
+.card-container > button{
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    top: 236px;
+    margin-left: 30px;
+    width: 143px;
+    height: 48px;
+    background-color: #FFFFFF;
+    border: 1px solid #DCDCDC;
+    border-radius: 50px; 
+    font-size: 18px;
+}
+
+.card-container > img{
+    display: flex;
+    position: relative;
+    left: 300px;
+    bottom: 90px;
+}
+
+.card-detail{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    position: relative;
+    bottom: 130px;
+    margin: 20px 30px;
+}
+
+.card-detail > :nth-child(1){
+font-weight: 700;
+font-size: 24px;
+line-height: 28px;
+color: #000000;
+}
+
+.card-detail > :nth-child(2){
+font-size: 18px;
+font-weight: 400;
+line-height: 28px;
+color: #646464;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: #FEBD2F;
+    height: 100px;
+    margin-top: 10px;
+}
