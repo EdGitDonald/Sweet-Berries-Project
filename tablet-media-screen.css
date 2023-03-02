@@ -52,8 +52,8 @@ body{
 }
 
 .image-spec > :nth-child(1){ 
-    width: 688px;
-    height: 360px;
+    width: 100%;
+    height: auto;
 }
 
 .cards{
