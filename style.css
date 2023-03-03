@@ -1,9 +1,182 @@
 body{
-    font-family: robotoserif;
-    margin: 0px 80px 0px 80px;
+    font-family: 'Roboto', sans-serif;
     height: auto;
     background-color:  #f5f3ef;
 }
+
+/* test css start */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav-bar{
+    border-bottom: 1px solid #E2E8F0;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-inline: 60px;
+    padding: 1rem 1.5rem;
+}
+
+.nav-tab{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.nav-tab > :nth-child(2){
+    margin-left: 2rem;
+}
+
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    margin-left: 5rem;
+}
+
+.nav-link{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+.nav-link:hover{
+    color: #FEBD2F;
+}
+
+ul > :nth-child(1){
+    display: none;
+}
+
+ul > :nth-child(2){
+    display: none;
+}
+
+.border{
+    background-color: #000000;
+    color: #FFFFFF;
+    height: 38px;
+    width: 128px;
+    border-radius: 30px;
+    text-align: center;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+@media only screen and (max-width: 500px) {
+    .nav-menu {
+        position: fixed;
+        top: 7rem;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        left:-100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-menu.active {
+        left: 0%;
+    }
+
+    .nav-item {
+        
+        margin: 2.5rem 0;
+    }
+
+    .nav-logo{
+        left: 60px;
+    }
+
+    .nav-bar{
+        margin-inline: 0px;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    ul > :nth-child(1){
+        display: block;
+    }
+    
+    ul > :nth-child(2){
+        display: block;
+    }
+
+    .nav-tab{
+        display: none;
+    }
+
+    .border{
+        display: none;
+    }
+
+    .nav-link{
+        color: #000000;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+}
+
+
+/* test css end */
 
 .grid-container{
  display: grid;
@@ -23,46 +196,26 @@ body{
     grid-area: header;
     height: 100px;
     padding: 30px 0px;
-   
 }
 
-.header-card{
-    display: flex;
-    justify-content: space-between;  
-}
-
-.header-card > :nth-child(2){
+.nav-bar > :nth-child(2){
     display: flex;
     position: relative;
     right: 20px;
 }
 
-.header-card > :nth-child(3){
-    background-color: #000000;
-    color: #FFFFFF;
-    border-radius: 28px;
-    border: #000000 solid;
-    height: 48px;
-    width: 130px;
 
-}
+
 
 a{
     text-decoration: none;
     color: #000000;
 }
 
-nav{
-    font-size: 18px;
-}
-
-nav > :nth-child(2){
-    margin-left: 47px;
-}
-
 .title{
     grid-area: title;
     height: 550px;
+    margin: 0px 80px 0px 80px;
 }
 
 .title-card{
@@ -90,11 +243,12 @@ flex-wrap: wrap;
     align-items: center;
     grid-area: image;
     height: 550px;
+    margin: 0px 80px 0px 80px;
 }
 
 .image-spec > :nth-child(1){
-    width: 600px;
-    height: 440px;
+    width: 100%;
+    height: auto;
     border-radius: 40px;
 }
 
@@ -105,6 +259,7 @@ flex-wrap: wrap;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin: 0px 80px 0px 80px;
 }
 
 .cards > :nth-child(1){
@@ -125,6 +280,10 @@ height: 324px;
 width: 400px;
 background-color: #FFFFFF;
 border-radius: 40px;
+}
+
+.card-container > p{
+    font-family: 'Roboto Serif', serif;
 }
 
 .card-container > button{
@@ -173,8 +332,17 @@ color: #646464;
 }
 
 .footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     grid-area: footer;
     background-color: #FEBD2F;
     height: 100px;
-    margin-top: 10px;
+    margin-top: 10px;   
 }
+
+.footer > img{
+    height: 32px;
+    width: 129.62px;
+}
+

@@ -6,21 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" media="screen and (max-width: 768px)" href="tablet-media-screen.css">
-    <script src ="./script.js"></script>
+    <link rel="stylesheet" media="screen and (max-width: 500px)" href="mobile-media-screen.css">
+    <script src ="./script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Serif:opsz@8..144&display=swap" rel="stylesheet">
     <title>Sweet Berries Cooking School</title>
 </head>
 <body>
 <div class="grid-container">
    <div class="grid-item header">
-    <div class="header-card">
-        <nav>
-            <a href="">Courses</a>
-            <a href="">About us</a>
-        </nav>
-        <img src="images/Logo.png" alt="logo">
-        <button>Get Started</button>
+     <header class="nav-bar">
+               <div class="nav-tab">
+                  <a href="*">Courses</a>
+                  <a href="*">About Us</a>
+               </div>
+                <a href="#" class="nav-logo"><img src="images/Logo.png" alt="logo"></a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">About Us</a>
+                    </li>
+                    <li class="nav-item border">
+                        <a href="#" class="nav-link">Get Started</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+        
+     </header>
     </div>
-   </div>
    <div class="grid-item title">
     <div class="title-card">
       <h1>Discover Your Perfect Online Cooking Courses</h1>
@@ -79,7 +102,9 @@
     </div>
    </div>
 </div>
-  <div class="grid-item footer">5</div>
+  <div class="grid-item footer">
+    <img src="images/Logo.png" alt="logo">
+  </div>
 </div>
 </body>
 </html>

@@ -1,0 +1,39 @@
+
+
+.title-card > :nth-child(1){
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    margin: 0px 40px 10px 40px;
+
+}
+
+.title-card > :nth-child(2){
+    display: flex;
+    text-align: center;
+    margin: 0px 40px 10px 40px;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400px;
+    color: #646464;
+}
+
+.image-spec > :nth-child(1){ 
+    width: 342px;
+    height: 220px;
+}
+
+.cards > :nth-child(1){
+    background-color: #FEBD2F;
+    width: 342px;
+    height: 132px;
+    border-radius: 24px;
+    margin-top: 10px;
+}
+
+.card1{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+}
