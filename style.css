@@ -103,7 +103,7 @@ ul > :nth-child(2){
 }
 
 
-
+/* Props to you for creating a hamburger menu! Looks great and is functional! */
 @media only screen and (max-width: 500px) {
     .nav-menu {
         position: fixed;
@@ -177,7 +177,10 @@ ul > :nth-child(2){
 
 
 /* test css end */
-
+/* Good job on using Grid and flex box. 
+However, there’s room for improvement. 
+You added a margin on the top and bottom or added a height for most grid items. 
+You can take advantage of declaring the grid-template-rows for better code quality and for easier managing. */
 .grid-container{
  display: grid;
  grid-template-columns: 1fr 1fr;
@@ -252,6 +255,11 @@ flex-wrap: wrap;
     border-radius: 40px;
 }
 
+/* You should make this grid item into a display grid instead of flex.
+You don't have 3 cards in each row because you are using flexbox.
+You need to use display Grid to give it structure of 3 columns. */
+
+/* You need to give it some gap to have some space between the cards */
 .cards{
     grid-area: cards;
     height: 900px;
@@ -281,7 +289,7 @@ width: 400px;
 background-color: #FFFFFF;
 border-radius: 40px;
 }
-
+/* You haven't used the right fonts in the right places */
 .card-container > p{
     font-family: 'Roboto Serif', serif;
 }
@@ -301,6 +309,9 @@ border-radius: 40px;
     font-size: 18px;
 }
 
+/* Even-though it looks like you achieved placing the logo above the card, it is not the proper way. 
+You should give the icon a position of absolute, this will bring the icon out of the document flow.
+Then you need to give the card a position of relative in order for the icon to be placed in relative to the card. */
 .card-container > img{
     display: flex;
     position: relative;
